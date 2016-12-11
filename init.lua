@@ -23,7 +23,7 @@ minetest.register_node('noclip_viewer:viewing_box', {
 	description = 'NoClip Viewer',
 	tiles = {'noclip_viewer_box.png'},
 	groups = {cracky = 3},
-	drops = ''
+	drop = '',
 })
 
 minetest.register_craft({
