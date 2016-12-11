@@ -23,13 +23,14 @@ minetest.register_node('noclip_viewer:viewing_box', {
 	description = 'NoClip Viewer',
 	tiles = {'noclip_viewer_box.png'},
 	groups = {cracky = 3},
+	drops = ''
 })
 
 minetest.register_craft({
 	output = 'noclip_viewer:viewing_box', 
 	recipe = {
-		{'default:glass', 'default:glass', 'default:glass'},
-		{'default:glass', 'default:mese ', 'default:glass'},
-		{'default:glass', 'default:glass', 'default:glass'},
+		{'default:glass', 'default:glass'                , 'default:glass'},
+		{'default:glass', 'default:mese_crystal_fragment', 'default:glass'},
+		{'default:glass', 'default:glass'                , 'default:glass'},
 	}
 })
