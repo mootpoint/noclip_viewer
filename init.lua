@@ -20,10 +20,24 @@ along with noclip_viewer.  If not, see <http://www.gnu.org/licenses/>.
 
 
 minetest.register_node('noclip_viewer:viewing_box', {
-	description = 'NoClip Viewer',
-	tiles = {'noclip_viewer_box.png'},
-	groups = {cracky = 3},
-	drop = '',
+	description = "Noclip Block",
+	tiles = {"noclip_viewer_box.png"},
+	inventory_image = "noclip_viewer_box.png",
+	wield_image = "noclip_viewer_box.png",
+	paramtype = "light",
+	paramtype2 = "wallmounted",
+	sunlight_propagates = true,
+	walkable = false,
+	selection_box = {
+		type = "wallmounted",
+		--wall_top = <default>
+		--wall_bottom = <default>
+		--wall_side = <default>
+	},
+	groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3},
+	sounds = default.node_sound_glass_defaults(),
+	legacy_wallmounted = true,
+})
 })
 
 minetest.register_craft({
