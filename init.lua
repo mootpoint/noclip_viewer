@@ -28,17 +28,10 @@ minetest.register_node('noclip_viewer:viewing_box', {
 	paramtype2 = "wallmounted",
 	sunlight_propagates = true,
 	walkable = false,
-	selection_box = {
-		type = "wallmounted",
-		--wall_top = <default>
-		--wall_bottom = <default>
-		--wall_side = <default>
-	},
-	groups = {snappy=2,cracky=3,oddly_breakable_by_hand=3},
-	sounds = default.node_sound_glass_defaults(),
+	groups = {snappy=2,cracky=2,oddly_breakable_by_hand=3},
 	legacy_wallmounted = true,
 })
-})
+
 
 minetest.register_craft({
 	output = 'noclip_viewer:viewing_box', 
