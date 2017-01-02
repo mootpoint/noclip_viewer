@@ -1,5 +1,5 @@
 -- noclip_viewer by Tucker Bameberg AKA 'mootpoint'
-
+-- edited by ManElevation
 --[[
 Copyright (C) 2016 Joseph 'Tucker' Bamberg
 leave room for Foz to copyright if he wants
